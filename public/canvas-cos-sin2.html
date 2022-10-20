@@ -37,10 +37,10 @@
 
     const ballNum = 18;
     const angUnit = Math.PI*2 / ballNum;
-    let r = 300;
-    let rr = 30;
+    let r = 250;
+    let rr = 25;
 
-    for(let i=0; i<ballNum*3; i++, r-=5, rr-=.5){
+    for(let i=0; i<ballNum*3; i++, r-=4, rr-=.5){
         const x = cx + Math.cos(i*angUnit)*r;
         const y = cy + Math.sin(i*angUnit)*r;
         const degree = i*angUnit/Math.PI*180;
