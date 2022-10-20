@@ -19,10 +19,15 @@
     <div class="rect" draggable="true">pink</div>
 
     <script>
-        const rect =
-        const handler = event =>{
+        const rect = document.querySelector('.rect');
 
-        }
+        const handler = event=>{
+            console.log(event.type)
+        };
+
+        rect.addEventListener('dragstart', handler);
+        // rect.addEventListener('drag', handler);
+        rect.addEventListener('dragend', handler);
     </script>
 </body>
 </html>
